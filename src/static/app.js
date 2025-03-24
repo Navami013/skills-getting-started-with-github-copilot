@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
+  const darkModeToggle = document.querySelector(".dark-mode-toggle");
 
   // Function to fetch activities from API
   async function fetchActivities() {
@@ -82,11 +83,4 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       messageDiv.textContent = "Failed to sign up. Please try again.";
       messageDiv.className = "error";
-      messageDiv.classList.remove("hidden");
-      console.error("Error signing up:", error);
-    }
-  });
-
-  // Initialize app
-  fetchActivities();
-});
+  

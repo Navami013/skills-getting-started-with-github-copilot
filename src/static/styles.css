@@ -22,10 +22,23 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
 }
 
 header h1 {
   margin-bottom: 10px;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #3949ab;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 main {
@@ -151,4 +164,31 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+body.dark-mode header {
+  background-color: #3949ab;
+}
+
+body.dark-mode section {
+  background-color: #444;
+  color: #f5f5f5;
+}
+
+body.dark-mode .activity-card {
+  background-color: #555;
+  border-color: #666;
+}
+
+body.dark-mode button {
+  background-color: #1a237e;
+}
+
+body.dark-mode button:hover {
+  background-color: #3949ab;
 }
